@@ -1,0 +1,126 @@
+@import '../../ui/colors';
+@import '../../ui/values';
+
+.skills {
+  min-height: 100vh;
+  padding: calc(#{$navbarheight} + 1rem) 0 2rem 0;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 20px;
+    position: relative;
+
+    .skillsopen {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $lightwhite;
+      border-radius: 10px;
+      width: fit-content;
+      padding: 8px 10px;
+      font-family: 'Ubuntu Mono', monospace;
+      letter-spacing: 0.5px;
+    }
+
+    .skillsclose {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $lightwhite;
+      border-radius: 10px;
+      width: fit-content;
+      padding: 8px 10px;
+      font-family: 'Ubuntu Mono', monospace;
+      letter-spacing: 0.5px;
+    }
+
+    .skills_content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+      margin: 3.5rem 0;
+
+      a {
+        font-size: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        border-radius: 10px;
+        transition: 0.5s all ease-in-out !important;
+        background: $lightwhite;
+
+        &:hover {
+          border-radius: 50px;
+          background: $primarylight;
+          box-shadow: 0 0 6px rgba(111, 125, 252, 0.6);
+        }
+
+        & svg {
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover svg {
+          color: $lightwhite !important;
+        }
+      }
+    }
+  }
+}
+
+.light{
+  background-color: $lightbackground;
+  .wrapper{
+    .skillsopen{
+      background: $primarylight;
+    }
+    .skillsclose{
+      background: $primarylight;
+    }
+    .skills_content{
+      a{
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+.dark{
+  background-color: $darkbackground;
+  .wrapper{
+    .skillsopen{
+      background: $primarydark;
+    }
+    .skillsclose{
+      background: $primarydark;
+    }
+    .skills_content{
+      a{
+        box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+        background-color: $lightwhite;
+        &:hover {
+          box-shadow: 0 0 6px rgba(111, 125, 252, 0.6);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .skills {
+    .wrapper {
+      .skills_content {
+        gap: 2rem;
+
+        a {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}
