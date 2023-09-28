@@ -49,4 +49,11 @@ export const ProjectsData: ProjectsType[] = [
     GitHub: 'https://github.com/rajdeepsri/3d-portfolio',
     hosted: 'https://3d-portfolio-razz.netlify.app/',
   },
+  {
+    title: 'SummarAI',
+    description: `AI Summarizer gives concise summary of web articles using GPT-4`,
+    image: '/summarAI.png',
+    GitHub: 'https://github.com/rajdeepsri/summarAI',
+    hosted: 'https://summar-ai.netlify.app/',
+  },
 ];
