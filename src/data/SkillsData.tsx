@@ -12,10 +12,11 @@ import {
   SiAdobeaftereffects,
 } from "react-icons/si";
 import { ImGit } from "react-icons/im";
+import { ReactElement } from "react";
 
 interface SkillsType {
   name: string;
-  icon: any;
+  icon: ReactElement;
   link: string;
 }
 

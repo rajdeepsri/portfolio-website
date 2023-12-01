@@ -8,7 +8,14 @@ interface ProjectsType {
 
 export const ProjectsData: ProjectsType[] = [
   {
-    title: 'Youtube Clone',
+    title: 'WhatsApp Web Clone',
+    description: `A Real-time Chat Application with WhatsApp like UI and features`,
+    image: "/wa.png",
+    GitHub: 'https://github.com/rajdeepsri/whatsapp-clone-chat-app',
+    hosted: 'https://whatsapp-clone-chat-app.vercel.app/',
+  },
+  {
+    title: 'Youtube 2.0',
     description: `A modern youtube clone made with React.js, MaterialUI and RapidAPI`,
     image: "/youtube.png",
     GitHub: 'https://github.com/rajdeepsri/youtube-clone',

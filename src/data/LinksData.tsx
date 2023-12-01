@@ -1,9 +1,10 @@
+import { ReactElement } from "react";
 import { ImGithub, ImLinkedin, ImYoutube } from "react-icons/im";
 import { SiLeetcode } from "react-icons/si";
 
 interface LinksType {
   title: string;
-  icon: any;
+  icon: ReactElement;
   link: string;
 }
 
@@ -16,7 +17,7 @@ export const LinksData: LinksType[] = [
   {
     title: "LinkedIn",
     icon: <ImLinkedin color="#000000dc" />,
-    link: "https://www.linkedin.com/in/rajdeep-shrivastava-199a9822a/",
+    link: "https://www.linkedin.com/in/rajdeep-shrivastava",
   },
   {
     title: "Leetcode",
