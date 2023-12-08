@@ -1,10 +1,12 @@
-@import '../../ui/colors';
-@import '../../ui/values';
+@import "../../ui/colors";
+@import "../../ui/values";
 
 .projects {
   min-height: 100vh;
   padding: calc(#{$navbarheight} + 1rem) 0 2rem 0;
   overflow-x: hidden;
+  overflow: auto;
+  max-height: calc(100vh - 4.8rem);
   transition: 0.3s all ease;
 
   .wrapper {
@@ -22,7 +24,7 @@
       border-radius: 10px;
       width: fit-content;
       padding: 8px 10px;
-      font-family: 'Ubuntu Mono', monospace;
+      font-family: "Ubuntu Mono", monospace;
       letter-spacing: 0.5px;
     }
 
@@ -35,7 +37,7 @@
       border-radius: 10px;
       width: fit-content;
       padding: 8px 10px;
-      font-family: 'Ubuntu Mono', monospace;
+      font-family: "Ubuntu Mono", monospace;
       letter-spacing: 0.5px;
     }
 
@@ -49,10 +51,10 @@
   }
 }
 
-.light{
+.light {
   background-color: $lightbackground;
 }
 
-.dark{
+.dark {
   background-color: $darkbackground;
 }

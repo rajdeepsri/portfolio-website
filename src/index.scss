@@ -1,5 +1,5 @@
-@import './ui/fonts';
-@import './ui/colors';
+@import "./ui/fonts";
+@import "./ui/colors";
 
 * {
   margin: 0;
@@ -8,16 +8,14 @@
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 4px;
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: $primarylight;
-  border-radius: 4px;
+  background: rgba($color: $primarylight, $alpha: 0.85);
 }
